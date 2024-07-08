@@ -1,0 +1,62 @@
+.container{
+  display: flex;
+  gap: 50px;
+  padding: 1.5rem;
+  color: var(--textColor);
+}
+
+.imageContainer{
+  flex: 1;
+  position: relative;
+  height: calc(100vh - 200px);
+}
+
+.img{
+  object-fit: cover;
+}
+
+.textContainer{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.title{
+  font-size: 64px;
+}
+
+.detail{
+  display: flex;
+  gap: 20px;
+}
+
+.detailText{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.detailTitle{
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+.detailValue{
+  font-weight: 500;
+}
+
+.content{
+  font-size: 20px;
+}
+
+.avatar{
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px){
+  .imageContainer{
+    display: none;
+  }
+}
