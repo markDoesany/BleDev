@@ -1,8 +1,18 @@
 import React from 'react'
+import { handleGithubLogin, handleLogin } from '@/lib/actions'
 
-function LoginPage() {
+async function LoginPage() {
   return (
-    <div>LoginPage</div>
+    <div>
+      <form action={handleGithubLogin}>
+        <button>Login using github</button>
+      </form>
+      <form action={handleLogin}>
+        <input type="text" placeholder='username' name='username'/>
+        <input type="password" placeholder='password' name='password' />
+        <button>Login</button>
+      </form>
+    </div>
   )
 }
 
